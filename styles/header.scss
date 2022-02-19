@@ -1,0 +1,150 @@
+/* ================ Header ================ */
+
+.header.scroll-header {
+    background-color: var(--body-color);
+
+    .nav__logo {
+        color: var(--dark-color);
+    }
+
+    .nav_btns {
+        .user,
+        .heart,
+        .nav_cart,
+        .nav__toggle {
+            color: var(--dark-color);
+        }
+    }
+}
+.navbar {
+    padding: var(--sp-0-5) var(--sp-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav_btns {
+        .user,
+        .heart,
+        .nav_cart,
+        .nav__toggle {
+            margin: 0 var(--sp-0-5);
+            color: var(--white-color);
+            font-size: var(--h2-font-size);
+            cursor: pointer;
+        }
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 70%;
+
+    text-transform: uppercase;
+    background-color: white;
+    z-index: var(--z-fixed);
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    .nav_menu {
+        margin-top: var(--sp-4);
+        .nav__link {
+            color: #2d3748;
+            padding: 1rem;
+            display: block;
+
+            &:hover {
+                background-color: #cbd5e1;
+            }
+        }
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        font-size: var(--h1-font-size);
+        margin: var(--sp-1);
+    }
+}
+
+.nav__logo {
+    font-family: inherit;
+    color: var(--white-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+}
+
+nav.open {
+    transform: translateX(0);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .navbar {
+        .nav__toggle {
+            display: none;
+        }
+    }
+
+    nav {
+        transform: translateX(0);
+        background-color: transparent;
+
+        .nav_menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+
+            .nav__link {
+                position: relative;
+                color: #2d3748;
+
+                &:hover {
+                    background-color: transparent;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #2d3748;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+
+        .nav__close {
+            display: none;
+        }
+    }
+
+    .nav__logo {
+        color: #2d3748;
+    }
+}
