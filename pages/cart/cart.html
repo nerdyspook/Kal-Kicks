@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ======================== Font Awesome ======================= -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+        <link
+            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- =========================== Kal-UI ========================== -->
+
+        <link
+            rel="stylesheet"
+            href="https://kal-ui.netlify.app/styles/style.css"
+        />
+
+        <!-- ============================= CSS =========================== -->
+        <link rel="stylesheet" href="../../styles/style.css" />
+        <link rel="stylesheet" href="./cart.css" />
+
+        <title>Kickers</title>
+    </head>
+    <body>
+        <!-- =========================== Header ========================== -->
+        <header class="header" id="header">
+            <div class="navbar container">
+                <a href="../../index.html" class="nav__logo">Kickers</a>
+
+                <nav>
+                    <ul class="nav_menu">
+                        <li>
+                            <a href="../../index.html" class="nav__link"
+                                >Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="../product-listing/products.html"
+                                class="nav__link"
+                                >Products</a
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                class="search__input"
+                                placeholder="Search"
+                            />
+                        </li>
+                    </ul>
+
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </nav>
+
+                <div class="nav_btns">
+                    <a class="bx bxs-user user"></a>
+                    <a
+                        href="../wishlist/wishlist.html"
+                        class="bx bxs-heart heart"
+                    ></a>
+                    <a
+                        href="../cart/cart.html"
+                        class="bx bxs-cart-alt nav_cart"
+                    ></a>
+                    <a class="bx bx-log-out logout"></a>
+                    <a class="fas fa-bars nav__toggle" id="nav-toggle"></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================== Main ========================== -->
+
+        <main class="main container">
+            <!-- ============ Content ============ -->
+            <section class="contents">
+                <div class="title">Items in Cart</div>
+
+                <div class="divider"></div>
+
+                <div class="card-cart">
+                    <img
+                        class="card__img"
+                        src="../../assets/images/shoe3.jfif"
+                        alt="card image"
+                    />
+
+                    <div class="card-details">
+                        <div class="heading">
+                            <h4>
+                                Nike Air Force 1 '07 LV8 <span>₹9,695.00</span>
+                            </h4>
+                            <h6>Nike</h6>
+                        </div>
+
+                        <p>Black/Rough Green/White/Total Orange</p>
+
+                        <div class="order__details">
+                            <div class="size">
+                                <label for="size">Size</label>
+                                <fieldset>
+                                    <select
+                                        name="variant"
+                                        id="variant"
+                                        class="variant"
+                                    >
+                                        <option
+                                            value="one"
+                                            class="one"
+                                            selected="selected"
+                                        >
+                                            6
+                                        </option>
+                                        <option value="two" class="two">
+                                            7
+                                        </option>
+                                        <option value="three" class="three">
+                                            8
+                                        </option>
+                                        <option value="four" class="four">
+                                            9
+                                        </option>
+                                        <option value="five" class="five">
+                                            10
+                                        </option>
+                                        <option value="six" class="six">
+                                            11
+                                        </option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="quantity">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" value="1" />
+                            </div>
+                        </div>
+
+                        <div class="order__actions">
+                            <button class="btn">Move to Favourites</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="card-cart">
+                    <img
+                        class="card__img"
+                        src="../../assets/images/shoe2.jfif"
+                        alt="card image"
+                    />
+
+                    <div class="card-details">
+                        <div class="heading">
+                            <h4>
+                                Nike Dunk High Retro SE <span>₹10,295.00</span>
+                            </h4>
+                            <h6>Nike</h6>
+                        </div>
+
+                        <p>Black/Black/White/Hyper Royal</p>
+
+                        <div class="order__details">
+                            <div class="size">
+                                <label for="size">Size</label>
+                                <fieldset>
+                                    <select
+                                        name="variant"
+                                        id="variant"
+                                        class="variant"
+                                    >
+                                        <option
+                                            value="one"
+                                            class="one"
+                                            selected="selected"
+                                        >
+                                            6
+                                        </option>
+                                        <option value="two" class="two">
+                                            7
+                                        </option>
+                                        <option value="three" class="three">
+                                            8
+                                        </option>
+                                        <option value="four" class="four">
+                                            9
+                                        </option>
+                                        <option value="five" class="five">
+                                            10
+                                        </option>
+                                        <option value="six" class="six">
+                                            11
+                                        </option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="quantity">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" value="1" />
+                            </div>
+                        </div>
+
+                        <div class="order__actions">
+                            <button class="btn">Move to Favourites</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="card-cart">
+                    <img
+                        class="card__img"
+                        src="../../assets/images/shoe4.jfif"
+                        alt="card image"
+                    />
+
+                    <div class="card-details">
+                        <div class="heading">
+                            <h4>
+                                Nike Air Zoom Rival Fly 3
+                                <span>₹8,195.00</span>
+                            </h4>
+                            <h6>Nike</h6>
+                        </div>
+
+                        <p>Black/Sail/Total Orange/White</p>
+
+                        <div class="order__details">
+                            <div class="size">
+                                <label for="size">Size</label>
+                                <fieldset>
+                                    <select
+                                        name="variant"
+                                        id="variant"
+                                        class="variant"
+                                    >
+                                        <option
+                                            value="one"
+                                            class="one"
+                                            selected="selected"
+                                        >
+                                            6
+                                        </option>
+                                        <option value="two" class="two">
+                                            7
+                                        </option>
+                                        <option value="three" class="three">
+                                            8
+                                        </option>
+                                        <option value="four" class="four">
+                                            9
+                                        </option>
+                                        <option value="five" class="five">
+                                            10
+                                        </option>
+                                        <option value="six" class="six">
+                                            11
+                                        </option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="quantity">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" value="1" />
+                            </div>
+                        </div>
+
+                        <div class="order__actions">
+                            <button class="btn">Move to Favourites</button>
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ Sidebar ============ -->
+            <section class="sidebar">
+                <div class="title">Summary</div>
+
+                <div class="divider"></div>
+
+                <ul class="summary">
+                    <li>Subtotal <span>₹ 28,185</span></li>
+                    <li>Discount <span class="discount">-₹4000</span></li>
+                    <li>Delivery Charges <span class="charges">FREE</span></li>
+                </ul>
+
+                <div class="divider dotted"></div>
+
+                <div class="total__price">
+                    Total Amount <span>₹ 24,185</span>
+                </div>
+
+                <div class="checkout">Checkout</div>
+            </section>
+        </main>
+
+        <!-- =========================== Footer ========================== -->
+        <footer class="footer container">
+            <div class="contacts"></div>
+        </footer>
+
+        <!-- ==================== FOnt Awesome =================== -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ======================== JS ======================== -->
+        <script src="../../scripts/main.js"></script>
+    </body>
+</html>

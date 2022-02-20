@@ -1,0 +1,173 @@
+/* ================== Cart ================ */
+.main {
+  max-width: 1440px;
+  max-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  margin-top: calc(var(--header-height) + var(--sp-3));
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  /* ========== Items List ========= */
+  /* ========== Total Bill ========= */
+}
+
+.main .contents {
+  background-color: var(--white-color);
+  padding: var(--sp-1);
+  margin-bottom: var(--sp-2);
+  border-radius: 0.4rem;
+  box-shadow: var(--card-box-shadow);
+  -webkit-box-shadow: var(--card-box-shadow);
+  -moz-box-shadow: var(--card-box-shadow);
+}
+
+.main .contents .card-cart {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--sp-1);
+  -ms-grid-columns: 10rem auto;
+      grid-template-columns: 10rem auto;
+  margin: 0 0 var(--sp-1) 0;
+}
+
+.main .contents .card-cart img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main .contents .card-cart .card-details .heading {
+  font-size: var(--h2-font-size);
+  margin: 0 0 var(--sp-0-5) 0;
+  padding: 0;
+}
+
+.main .contents .card-cart .card-details .heading h4 {
+  color: var(--title-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .contents .card-cart .card-details .order__details {
+  margin: var(--sp-0-5) 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--sp-1);
+}
+
+.main .contents .card-cart .card-details .order__details .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .contents .card-cart .card-details .order__details .size fieldset {
+  border: none;
+}
+
+.main .contents .card-cart .card-details .order__details .size fieldset select {
+  border: none;
+}
+
+.main .contents .card-cart .card-details .order__details .quantity input {
+  padding-left: 2px;
+  width: 3rem;
+}
+
+.main .contents .card-cart .card-details .order__actions .btn {
+  font-size: var(--smaller-font-size);
+  margin: var(--sp-1) 0 0 0;
+  background-color: #2d3748;
+  border-radius: 0.2rem;
+}
+
+.main .contents .card-cart .card-details .order__actions .btn:hover {
+  background-color: var(--dark-color);
+}
+
+.main .sidebar {
+  display: block;
+  position: unset;
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: 17.5rem;
+  margin: 0 auto;
+}
+
+.main .sidebar .summary li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: var(--sp-1);
+  font-size: var(--small-font-size);
+}
+
+.main .sidebar .summary li .discount,
+.main .sidebar .summary li .charges {
+  color: var(--success-color);
+}
+
+.main .sidebar .total__price {
+  font-weight: var(--font-bold);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: var(--sp-1);
+}
+
+.main .sidebar .checkout {
+  position: absolute;
+  bottom: 0;
+  padding: var(--sp-1);
+  width: 100%;
+  text-align: center;
+  color: var(--white-color);
+  text-transform: uppercase;
+  background-color: var(--title-color);
+}
+
+.main .sidebar .checkout:hover {
+  background-color: var(--dark-color);
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    gap: var(--sp-0-25);
+    -ms-grid-columns: auto 300px;
+        grid-template-columns: auto 300px;
+    margin-left: var(--sp-0-5);
+  }
+  .main .sidebar {
+    float: right;
+  }
+  .main .contents {
+    float: left;
+  }
+  .main .contents .title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    margin: 0 var(--sp-0-5);
+  }
+  .main .contents .divider {
+    margin: var(--sp-1) 0;
+  }
+  .main .sidebar {
+    max-width: 18rem;
+  }
+}
+/*# sourceMappingURL=cart.css.map */
