@@ -1,0 +1,44 @@
+/* ================= Wishlist ================ */
+.navbar {
+    .nav_btns {
+        a {
+            font-size: var(--h2-font-size);
+            color: var(--dark-color);
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: var(--sp-0-25);
+
+    .content {
+        width: 1440px;
+        margin: 0 auto;
+
+        .page__heading {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: var(--biggest-font-size);
+            font-weight: var(--font-bold);
+
+            margin-bottom: var(--sp-3);
+        }
+
+        .total__items {
+            text-transform: uppercase;
+            color: var(--text-color-light);
+            font-size: var(--h2-font-size);
+            margin-bottom: var(--sp-1-5);
+        }
+
+        .product-card {
+            .wish {
+                i {
+                    color: var(--failure-color);
+                }
+            }
+        }
+    }
+}
