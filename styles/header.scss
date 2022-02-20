@@ -8,8 +8,9 @@
     }
 
     .nav_btns {
-        i {
+        a {
             color: var(--dark-color);
+            cursor: pointer;
         }
 
         .logout {
@@ -24,7 +25,7 @@
     justify-content: space-between;
 
     .nav_btns {
-        i {
+        a {
             margin: 0 var(--sp-0-5);
             color: var(--white-color);
             font-size: var(--h2-font-size);
@@ -101,6 +102,7 @@ nav.open {
     }
 
     nav {
+        height: var(--header-height);
         transform: translateX(0);
         background-color: transparent;
 
@@ -144,6 +146,10 @@ nav.open {
 
     .nav__logo {
         color: var(--text-color);
+    }
+
+    .nav_btns {
+        z-index: 1000;
     }
 }
 

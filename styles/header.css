@@ -7,8 +7,9 @@
   color: var(--dark-color);
 }
 
-.header.scroll-header .nav_btns i {
+.header.scroll-header .nav_btns a {
   color: var(--dark-color);
+  cursor: pointer;
 }
 
 .header.scroll-header .nav_btns .logout {
@@ -28,7 +29,7 @@
           justify-content: space-between;
 }
 
-.navbar .nav_btns i {
+.navbar .nav_btns a {
   margin: 0 var(--sp-0-5);
   color: var(--white-color);
   font-size: var(--h2-font-size);
@@ -102,6 +103,7 @@ nav.open {
     display: none;
   }
   nav {
+    height: var(--header-height);
     -webkit-transform: translateX(0);
             transform: translateX(0);
     background-color: transparent;
@@ -153,6 +155,9 @@ nav.open {
   }
   .nav__logo {
     color: var(--text-color);
+  }
+  .nav_btns {
+    z-index: 1000;
   }
 }
 
