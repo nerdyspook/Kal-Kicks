@@ -10,6 +10,7 @@
   --text-color: #2d3748;
   --text-color-light: #6b7280;
   --body-color: #f8fafc;
+  --body-color-alt: #e5e7eb;
   --container-color: #f8fafc;
   --box-hover-color: #cbd5e1;
   --success-color: #22c55e;
@@ -47,6 +48,9 @@
   --sp-4: 4rem;
   --sp-4-5: 4.5rem;
   --sp-5: 5rem;
+  /* ======== Card Box Shadow ======== */
+  --card-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.08);
+  --header-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
   /* ======== Z-Index ======== */
   --z-fixed: 100;
   --z-modal-back: 1000;
