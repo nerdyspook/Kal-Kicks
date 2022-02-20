@@ -1,4 +1,6 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./main.css");
+@import url("../pages/product-listing/products.css");
+@import url("../pages/wishlist/wishlist.css");
 /*# sourceMappingURL=style.css.map */
