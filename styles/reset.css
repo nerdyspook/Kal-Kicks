@@ -115,4 +115,9 @@ button:active {
 .divider {
   background-color: #d1d5db;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=reset.css.map */
