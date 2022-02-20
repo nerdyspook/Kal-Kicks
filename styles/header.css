@@ -59,18 +59,20 @@ nav .nav_menu {
 }
 
 nav .nav_menu .nav__link {
-  color: #2d3748;
+  color: var(--text-color);
   padding: var(--sp-1);
   display: block;
 }
 
 nav .nav_menu .nav__link:hover {
-  background-color: #cbd5e1;
+  background-color: var(--box-hover-color);
 }
 
 nav .nav_menu .search__input {
-  padding: 0.25rem 0.5rem;
-  border-radius: 5rem;
+  margin: 0 1rem;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
 }
 
 nav .nav__close {
@@ -119,6 +121,11 @@ nav.open {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0;
+  }
+  nav .nav_menu .search__input {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 5rem;
   }
   nav .nav_menu .nav__link {
     position: relative;

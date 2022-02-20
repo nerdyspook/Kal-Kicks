@@ -1,5 +1,4 @@
 /* ================ Header ================ */
-
 .header.scroll-header {
     background-color: var(--body-color);
 
@@ -63,8 +62,10 @@ nav {
         }
 
         .search__input {
-            padding: 0.25rem 0.5rem;
-            border-radius: 5rem;
+            margin: 0 1rem;
+            padding: 0;
+            border: none;
+            border-bottom: 1px solid var(--text-color);
         }
     }
 
@@ -111,6 +112,12 @@ nav.open {
             align-items: center;
             justify-content: flex-start;
             margin: 0;
+
+            .search__input {
+                padding: 0.25rem 0.5rem;
+                border: 1px solid var(--text-color);
+                border-radius: 5rem;
+            }
 
             .nav__link {
                 position: relative;
