@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ======================== Font Awesome ======================= -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+        <link
+            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- =========================== Kal-UI ========================== -->
+
+        <link
+            rel="stylesheet"
+            href="https://kal-ui.netlify.app/styles/style.css"
+        />
+
+        <!-- ============================= CSS =========================== -->
+        <link rel="stylesheet" href="../../styles/style.css" />
+        <link rel="stylesheet" href="./products.css" />
+
+        <title>Kickers</title>
+    </head>
+    <body>
+        <!-- =========================== Header ========================== -->
+        <header class="header" id="header">
+            <div class="navbar container">
+                <a href="../../index.html" class="nav__logo">Kickers</a>
+
+                <nav>
+                    <ul class="nav_menu">
+                        <li>
+                            <a href="../../index.html" class="nav__link"
+                                >Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="../product-listing/products.html"
+                                class="nav__link"
+                                >Products</a
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                class="search__input"
+                                placeholder="Search"
+                            />
+                        </li>
+                    </ul>
+
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </nav>
+
+                <div class="nav_btns">
+                    <a class="bx bxs-user user" href="/"></a>
+                    <a
+                        class="bx bxs-heart heart"
+                        href="./pages/wishlist/wishlist.html"
+                    ></a>
+                    <a class="bx bxs-cart-alt nav_cart" href="/"></a>
+                    <a class="bx bx-log-out logout"></a>
+                    <a class="fas fa-bars nav__toggle" id="nav-toggle"></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================== Main ========================== -->
+
+        <main class="main container">
+            <!-- ========================== Sidebar ========================== -->
+            <section class="sidebar">
+                <div class="title">
+                    Filter
+                    <i class="bx bx-slider-alt"></i>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- ========= Gender ========= -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="#">Gender</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <input
+                                type="radio"
+                                id="men"
+                                name="gender"
+                                value="men"
+                            />
+                            <label for="men">Men</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="women"
+                                name="gender"
+                                value="women"
+                            />
+                            <label for="women">Women</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="boys"
+                                name="gender"
+                                value="boys"
+                            />
+                            <label for="boys">Boys</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="girls"
+                                name="gender"
+                                value="girls"
+                            />
+                            <label for="girls">Girls</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- ========= Price ========= -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="#">Price</a>
+                    </div>
+
+                    <div class="slider">
+                        <input
+                            type="range"
+                            min="0"
+                            max="20000"
+                            step="5000"
+                            value="5000"
+                            list="tickmarks"
+                        />
+                        <datalist id="tickmarks" class="tickmarks">
+                            <option value="5000" label="5K"></option>
+                            <option value="10000" label="10K"></option>
+                            <option value="15000" label="15K"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- ========= Brand ========= -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="#">Brand</a>
+                    </div>
+
+                    <form class="form-checkbox" id="form-checkbox">
+                        <div class="item">
+                            <input
+                                type="checkbox"
+                                id="option1"
+                                name="option1"
+                            />
+                            <label for="option1">Nike</label>
+                        </div>
+
+                        <div class="item">
+                            <input
+                                type="checkbox"
+                                id="option2"
+                                name="option2"
+                            />
+                            <label for="option2">Adidas</label>
+                        </div>
+
+                        <div class="item">
+                            <input
+                                type="checkbox"
+                                id="option2"
+                                name="option2"
+                            />
+                            <label for="option2">Puma</label>
+                        </div>
+
+                        <div class="item">
+                            <input
+                                type="checkbox"
+                                id="option2"
+                                name="option2"
+                            />
+                            <label for="option2">Vans</label>
+                        </div>
+
+                        <div class="item">
+                            <input
+                                type="checkbox"
+                                id="option2"
+                                name="option2"
+                            />
+                            <label for="option2">Converse</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="clear__all">CLEAR ALL</div>
+            </section>
+
+            <!-- ===================== Content ===================== -->
+            <section class="content">
+                <!-- ========= Sort By ========= -->
+                <div class="sort_section">
+                    <fieldset>
+                        <select name="variant" id="variant" class="variant">
+                            <option value="one" class="one" selected="selected">
+                                Recommended
+                            </option>
+                            <option value="two" class="two">Popularity</option>
+                            <option value="three" class="three">
+                                Price: High to Low
+                            </option>
+                            <option value="four" class="four">
+                                Price: Low to High
+                            </option>
+                            <option value="five" class="five">
+                                Customer Rating
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <!-- ========= Products ========= -->
+                <div class="grid col-3-even">
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe1.jfif" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Nike</div>
+                            <div class="details">Nike Air Force 1 '07 LV8'</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 8295</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe2.jfif" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Nike</div>
+                            <div class="details">Nike Dunk High Retro SE</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 10,295</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe3.jfif" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Nike</div>
+                            <div class="details">Nike Air Force 1 '07 LV8'</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 9,695</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe4.jfif" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Nike</div>
+                            <div class="details">Nike Air Zoom Rival Fly</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 8,195</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe5.webp" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Adidas</div>
+                            <div class="details">NMD_R1 Primeblue Shoes</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 13,999</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="wish">
+                            <i class="bx bxs-heart"></i>
+                        </div>
+
+                        <img src="../../assets/images/shoe6.jpg" alt="" />
+
+                        <div class="product__details">
+                            <div class="title">Adidas</div>
+                            <div class="details">Fassona 1.0 Shoes</div>
+                            <div class="rating"></div>
+                            <div class="price">₹ 4,999</div>
+                        </div>
+
+                        <div class="add">Add to Cart</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- =========================== Footer ========================== -->
+        <footer class="footer container">
+            <div class="contact"></div>
+        </footer>
+
+        <!-- ==================== FOnt Awesome =================== -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ======================== JS ======================== -->
+        <script src="../../scripts/main.js"></script>
+    </body>
+</html>
