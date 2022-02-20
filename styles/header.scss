@@ -53,12 +53,12 @@ nav {
     .nav_menu {
         margin-top: var(--sp-4);
         .nav__link {
-            color: #2d3748;
+            color: var(--text-color);
             padding: var(--sp-1);
             display: block;
 
             &:hover {
-                background-color: #cbd5e1;
+                background-color: var(--box-hover-color);
             }
         }
 
