@@ -8,6 +8,7 @@
   --secondary-color: ;
   --title-color: #2d3748;
   --text-color: #2d3748;
+  --text-color-light: #6b7280;
   --body-color: #f8fafc;
   --container-color: #f8fafc;
   --success-color: #22c55e;
@@ -109,5 +110,9 @@ button:active {
 
 .rounded {
   border-radius: 100%;
+}
+
+.divider {
+  background-color: #d1d5db;
 }
 /*# sourceMappingURL=reset.css.map */

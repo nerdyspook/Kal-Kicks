@@ -8,10 +8,11 @@
     }
 
     .nav_btns {
-        .user,
-        .heart,
-        .nav_cart,
-        .nav__toggle {
+        i {
+            color: var(--dark-color);
+        }
+
+        .logout {
             color: var(--dark-color);
         }
     }
@@ -23,10 +24,7 @@
     justify-content: space-between;
 
     .nav_btns {
-        .user,
-        .heart,
-        .nav_cart,
-        .nav__toggle {
+        i {
             margin: 0 var(--sp-0-5);
             color: var(--white-color);
             font-size: var(--h2-font-size);
@@ -42,6 +40,7 @@ nav {
 
     height: 100vh;
     width: 70%;
+    padding: 0.25rem;
 
     text-transform: uppercase;
     background-color: white;
@@ -54,12 +53,17 @@ nav {
         margin-top: var(--sp-4);
         .nav__link {
             color: #2d3748;
-            padding: 1rem;
+            padding: var(--sp-1);
             display: block;
 
             &:hover {
                 background-color: #cbd5e1;
             }
+        }
+
+        .search__input {
+            padding: 0.25rem 0.5rem;
+            border-radius: 5rem;
         }
     }
 
@@ -89,12 +93,6 @@ nav.open {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
-    .header {
-        margin-left: 0;
-    }
-}
-
 @media screen and (min-width: 920px) {
     .navbar {
         .nav__toggle {
@@ -114,7 +112,7 @@ nav.open {
 
             .nav__link {
                 position: relative;
-                color: #2d3748;
+                color: var(--text-color);
 
                 &:hover {
                     background-color: transparent;
@@ -127,7 +125,7 @@ nav.open {
                     height: 2px;
                     bottom: 0;
                     left: 0;
-                    background-color: #2d3748;
+                    background-color: var(--text-color);
                     transform-origin: bottom right;
                     transition: transform 0.25s ease-out;
                 }
@@ -145,6 +143,12 @@ nav.open {
     }
 
     .nav__logo {
-        color: #2d3748;
+        color: var(--text-color);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        margin-left: 0;
     }
 }

@@ -7,10 +7,11 @@
   color: var(--dark-color);
 }
 
-.header.scroll-header .nav_btns .user,
-.header.scroll-header .nav_btns .heart,
-.header.scroll-header .nav_btns .nav_cart,
-.header.scroll-header .nav_btns .nav__toggle {
+.header.scroll-header .nav_btns i {
+  color: var(--dark-color);
+}
+
+.header.scroll-header .nav_btns .logout {
   color: var(--dark-color);
 }
 
@@ -27,10 +28,7 @@
           justify-content: space-between;
 }
 
-.navbar .nav_btns .user,
-.navbar .nav_btns .heart,
-.navbar .nav_btns .nav_cart,
-.navbar .nav_btns .nav__toggle {
+.navbar .nav_btns i {
   margin: 0 var(--sp-0-5);
   color: var(--white-color);
   font-size: var(--h2-font-size);
@@ -43,6 +41,7 @@ nav {
   right: 0;
   height: 100vh;
   width: 70%;
+  padding: 0.25rem;
   text-transform: uppercase;
   background-color: white;
   z-index: var(--z-fixed);
@@ -60,12 +59,17 @@ nav .nav_menu {
 
 nav .nav_menu .nav__link {
   color: #2d3748;
-  padding: 1rem;
+  padding: var(--sp-1);
   display: block;
 }
 
 nav .nav_menu .nav__link:hover {
   background-color: #cbd5e1;
+}
+
+nav .nav_menu .search__input {
+  padding: 0.25rem 0.5rem;
+  border-radius: 5rem;
 }
 
 nav .nav__close {
@@ -93,12 +97,6 @@ nav.open {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
-  .header {
-    margin-left: 0;
-  }
-}
-
 @media screen and (min-width: 920px) {
   .navbar .nav__toggle {
     display: none;
@@ -122,7 +120,7 @@ nav.open {
   }
   nav .nav_menu .nav__link {
     position: relative;
-    color: #2d3748;
+    color: var(--text-color);
   }
   nav .nav_menu .nav__link:hover {
     background-color: transparent;
@@ -136,7 +134,7 @@ nav.open {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2d3748;
+    background-color: var(--text-color);
     -webkit-transform-origin: bottom right;
             transform-origin: bottom right;
     -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -154,7 +152,13 @@ nav.open {
     display: none;
   }
   .nav__logo {
-    color: #2d3748;
+    color: var(--text-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=header.css.map */
