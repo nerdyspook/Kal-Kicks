@@ -1,0 +1,22 @@
+/* ============== Log In ========== */
+.main .split-screen .right form .input__container-cta {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .split-screen .right form .input__container-cta .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.main .split-screen .right form .input__container-cta .forgot {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+/*# sourceMappingURL=login.css.map */

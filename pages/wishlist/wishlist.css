@@ -33,4 +33,13 @@
 .main .content .product-card .wish i {
   color: var(--failure-color);
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 0 auto;
+  }
+  .main .content .page__heading {
+    padding-top: var(--sp-3);
+  }
+}
 /*# sourceMappingURL=wishlist.css.map */
