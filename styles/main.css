@@ -15,7 +15,7 @@
 }
 
 .hero {
-  max-height: 76vh;
+  max-height: 100vh;
   position: relative;
   color: var(--white-color);
   margin: var(--sp-1) var(--sp-1) 0 var(--sp-1);
@@ -27,7 +27,6 @@
 .hero .hero__title {
   text-transform: uppercase;
   font-size: var(--bigger-font-size);
-  margin-top: 10rem;
 }
 
 .hero p {
@@ -38,7 +37,7 @@
 .hero .down-arrow {
   margin: 0;
   position: absolute;
-  bottom: var(--sp-1);
+  bottom: var(--sp-5);
   left: 0;
   width: var(--sp-3);
   stroke: var(--white-color);
@@ -57,6 +56,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: moveUp 2s ease-in-out forwards;
+          animation: moveUp 2s ease-in-out forwards;
+  opacity: 0;
 }
 
 .info .new,
@@ -108,6 +110,32 @@
   font-size: var(--small-font-size);
 }
 
+.featured {
+  margin: var(--sp-2) 0;
+  -webkit-animation: moveUp 3s ease-in-out forwards;
+          animation: moveUp 3s ease-in-out forwards;
+  opacity: 0;
+}
+
+.featured .title {
+  margin-left: var(--sp-1);
+}
+
+.featured .featured__img {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: var(--font-bold);
+  text-align: right;
+  padding: var(--sp-1) var(--sp-1-5);
+  color: white;
+  width: 100%;
+  height: 25rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/feature2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../assets/images/feature2.jpg");
+  background-size: cover;
+  margin: var(--sp-2-5) 0;
+}
+
 /* ====== Featured ====== */
 .featured .title {
   text-transform: uppercase;
@@ -151,8 +179,12 @@
   }
   .hero .down-arrow {
     bottom: 0;
-    margin: var(--sp-1);
+    margin: var(--sp-5) 0;
     stroke: var(--dark-color);
+  }
+  .info {
+    -webkit-transform: translate(6rem);
+            transform: translate(6rem);
   }
 }
 
@@ -170,8 +202,8 @@
     height: 33rem;
   }
   .info {
-    -webkit-transform: translateY(-12rem);
-            transform: translateY(-12rem);
+    -webkit-transform: translateY(-6rem);
+            transform: translateY(-6rem);
   }
 }
 
@@ -258,8 +290,8 @@
             transform: translateY(100px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
     opacity: 1;
   }
 }
@@ -270,8 +302,8 @@
             transform: translateY(100px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
     opacity: 1;
   }
 }
