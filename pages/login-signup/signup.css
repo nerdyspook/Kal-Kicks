@@ -1,0 +1,197 @@
+@import url("../product-listing/products.css");
+/* ====================== Login / SignUp ======================= */
+.main {
+  margin-top: 0;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transform: translateY(-0.7rem);
+          transform: translateY(-0.7rem);
+}
+
+.main .split-screen {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .split-screen .left {
+  height: 12rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url("../../assets/images/shoe-head.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../../assets/images/shoe-head.jpg");
+  background-size: cover;
+}
+
+.main .split-screen .left .copy {
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main .split-screen .left .copy h1 {
+  font-size: var(--biggest-font-size);
+}
+
+.main .split-screen .left .copy p {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-light);
+}
+
+.main .split-screen .left,
+.main .split-screen .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .split-screen .right {
+  height: calc(100vh - 16rem);
+}
+
+.main .split-screen .right .copy {
+  color: var(--text-color);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.main .split-screen .right .copy p {
+  margin: var(--sp-0-5) 0;
+  font-size: var(--normal-font-size);
+}
+
+.main .split-screen .right form {
+  width: 18rem;
+}
+
+.main .split-screen .right form input[type="text"],
+.main .split-screen .right form input[type="email"],
+.main .split-screen .right form input[type="password"] {
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid var(--text-color-light);
+  padding: var(--sp-0-75);
+  margin-bottom: var(--sp-0-5);
+  font-size: var(--small-font-size);
+}
+
+.main .split-screen .right form .input__container-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .split-screen .right form .input__container-cta label,
+.main .split-screen .right form .input__container-cta input {
+  margin: 0;
+  cursor: pointer;
+}
+
+.main .split-screen .right form button {
+  background-color: var(--title-color);
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.main .split-screen .right form button:hover {
+  background-color: var(--dark-color);
+}
+
+.main .split-screen .right form .login__container {
+  text-align: center;
+}
+
+.main .split-screen .right form .legal {
+  margin: 0.5rem 0;
+}
+
+.main .split-screen .right form .legal .small {
+  font-size: var(--smaller-font-size);
+}
+
+.main .split-screen .right form a {
+  color: var(--secondary-color);
+}
+
+.main .split-screen .right label {
+  display: block;
+  margin-bottom: var(--sp-0-25);
+  font-size: var(--smaller-font-size);
+}
+
+@media screen and (min-width: 768px) {
+  .main .split-screen {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: calc(100vh - var(--header-height) + 0.7rem);
+  }
+  .main .split-screen .left,
+  .main .split-screen .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+  .main .split-screen .left {
+    padding: 1rem;
+  }
+  .main .split-screen .right form {
+    width: 90%;
+    padding: 1rem 3rem;
+    border-radius: 0.25rem;
+    background-color: var(--white-color);
+    -webkit-box-shadow: var(--card-box-shadow);
+            box-shadow: var(--card-box-shadow);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main .split-screen {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: calc(100vh - var(--header-height) + 0.7rem);
+  }
+  .main .split-screen .left,
+  .main .split-screen .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+  .main .split-screen .left {
+    padding: 1rem;
+  }
+  .main .split-screen .right form {
+    width: 80%;
+    padding: 2rem 4rem;
+    border-radius: 0.25rem;
+    background-color: var(--white-color);
+    -webkit-box-shadow: var(--card-box-shadow);
+            box-shadow: var(--card-box-shadow);
+  }
+}
+/*# sourceMappingURL=signup.css.map */

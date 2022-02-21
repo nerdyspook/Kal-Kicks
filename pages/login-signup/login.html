@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ======================== Font Awesome ======================= -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+        <link
+            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- =========================== Kal-UI ========================== -->
+
+        <link
+            rel="stylesheet"
+            href="https://kal-ui.netlify.app/styles/style.css"
+        />
+
+        <!-- ============================= CSS =========================== -->
+        <link rel="stylesheet" href="../../styles/style.css" />
+        <link rel="stylesheet" href="./signup.css" />
+        <link rel="stylesheet" href="./login.css" />
+
+        <title>Kickers</title>
+    </head>
+    <body>
+        <!-- =========================== Header ========================== -->
+        <header class="header" id="header">
+            <div class="navbar container">
+                <a href="../../index.html" class="nav__logo">Kickers</a>
+
+                <nav>
+                    <ul class="nav_menu">
+                        <li>
+                            <a href="../../index.html" class="nav__link"
+                                >Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="../product-listing/products.html"
+                                class="nav__link"
+                                >Products</a
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                class="search__input"
+                                placeholder="Search"
+                            />
+                        </li>
+                    </ul>
+
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </nav>
+
+                <div class="nav_btns">
+                    <a class="bx bxs-user user" href="/"></a>
+                    <a
+                        class="bx bxs-heart heart"
+                        href="../wishlist/wishlist.html"
+                    ></a>
+                    <a
+                        class="bx bxs-cart-alt nav_cart"
+                        href="../cart/cart.html"
+                    ></a>
+
+                    <a class="fas fa-bars nav__toggle" id="nav-toggle"></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================== Main ========================== -->
+
+        <main class="main container">
+            <div class="split-screen">
+                <div class="left">
+                    <section class="copy">
+                        <h1>Style in every step</h1>
+                        <p>
+                            Refreshed in an eye-catching colorway that
+                            compliments every outfit.
+                        </p>
+                    </section>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <section class="copy">
+                            <h2>Log In</h2>
+                        </section>
+
+                        <div class="input__container email">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Type here"
+                                id="email"
+                            />
+                        </div>
+
+                        <div class="input__container password">
+                            <label for="password">Password</label>
+                            <input
+                                placeholder="Must be atleast 8 characters"
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </div>
+
+                        <div class="input__container-cta">
+                            <div class="checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                    id="remember"
+                                />
+                                <label for="remember"> Remember me </label>
+                            </div>
+                            <a href="#" class="forgot">Forgot your password?</a>
+                        </div>
+
+                        <button class="btn signup__btn" type="submit">
+                            Log In
+                        </button>
+
+                        <div class="login__container">
+                            <p>
+                                Not a Member?
+                                <a href="./signup.html"
+                                    ><strong>Sign Up</strong></a
+                                >
+                            </p>
+                        </div>
+
+                        <section class="copy legal">
+                            <p>
+                                <span class="small"
+                                    >By continuing, you agree to accept our
+                                    <br />
+                                    <a href="#">Privacy Policy</a> &amp;
+                                    <a href="#">Terms of Service</a>.
+                                </span>
+                            </p>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- ==================== FOnt Awesome =================== -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ======================== JS ======================== -->
+        <script src="../../scripts/main.js"></script>
+    </body>
+</html>

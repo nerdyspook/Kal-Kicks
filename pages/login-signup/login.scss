@@ -1,0 +1,23 @@
+/* ============== Log In ========== */
+.main {
+    .split-screen {
+        .right {
+            form {
+                .input__container-cta {
+                    justify-content: space-between;
+
+                    .checkbox {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+
+                    .forgot {
+                        font-size: var(--smaller-font-size);
+                        color: var(--text-color-light);
+                    }
+                }
+            }
+        }
+    }
+}

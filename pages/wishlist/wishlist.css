@@ -1,3 +1,4 @@
+@import url("../product-listing/products.css");
 /* ================= Wishlist ================ */
 .navbar .nav_btns a {
   font-size: var(--h2-font-size);
@@ -32,5 +33,14 @@
 
 .main .content .product-card .wish i {
   color: var(--failure-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 0 auto;
+  }
+  .main .content .page__heading {
+    padding-top: var(--sp-3);
+  }
 }
 /*# sourceMappingURL=wishlist.css.map */
