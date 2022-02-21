@@ -150,7 +150,6 @@
     gap: var(--sp-0-25);
     -ms-grid-columns: auto 300px;
         grid-template-columns: auto 300px;
-    margin-left: var(--sp-0-5);
   }
   .main .sidebar {
     float: right;
