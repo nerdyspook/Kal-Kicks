@@ -1,4 +1,4 @@
-# Kal-Kicks
+# Kickers
 
 An E-Commerce store for shoes.
 
